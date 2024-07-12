@@ -1,0 +1,3 @@
+docker build -t teslavote .
+docker run --name selclient --restart always -d --net tesla_network teslavote
+docker rmi -f selserver
